@@ -38,7 +38,7 @@ public class MemberListServlet extends HttpServlet {
         for (Member member : members) {
             writer.write(" <tr>");
             writer.write(" <td>" + member.getId() + "</td>");
-            writer.write(" <td>" + member.getUserName() + "</td>");
+            writer.write(" <td>" + member.getUsername() + "</td>");
             writer.write(" <td>" + member.getAge() + "</td>");
             writer.write(" </tr>");
         }

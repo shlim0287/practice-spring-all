@@ -2,8 +2,12 @@ package hello.typeconverter.type;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @Getter
+@Setter
+@RequiredArgsConstructor
 @EqualsAndHashCode
 public class IpPort {
     private String ip;

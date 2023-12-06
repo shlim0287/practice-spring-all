@@ -10,9 +10,14 @@ import static org.assertj.core.api.Assertions.*;
 
 @Slf4j
 public class DBConnectionUtilTest {
+
     @Test
     void connection(){
+        //save
         Connection connection = DBConnectionUtil.getConnection();
         assertThat(connection).isNotNull();
+
+        //findById
+
     }
 }

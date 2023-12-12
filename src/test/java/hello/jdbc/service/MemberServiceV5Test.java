@@ -74,9 +74,9 @@ class MemberServiceV5Test {
         memberRepository.save(memberB);
         log.info("멤버 저장 성공.");
         //when
-        log.info("START-TX");
+        log.info("트렌잭션 시작");
         memberService.accountTransfer(memberA.getMemberId(), memberB.getMemberId(), 2000);
-        log.info("END-TX");
+        log.info("트렌잭션 종료");
         //then
         Member findMemberA = memberRepository.findById(memberA.getMemberId());
         Member findMemberB = memberRepository.findById(memberB.getMemberId());
